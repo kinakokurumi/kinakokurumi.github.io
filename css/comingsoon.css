@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrapper{
+	background-image: url("../img/sheet-music-2656005.jpg");
+	background-size: cover;
+}
+
+header{
+	background-image: none;
+	height: auto;
+	margin-bottom: 0;
+	padding-bottom: 100px;
+}
+
+header::before{
+	display: none;
+}
+
+.toggleWrap{
+	margin-bottom: 0;
+}
+
+main{
+	padding-bottom: 100px;
+	padding-left: 20px;
+}
+
+main p{
+	color: #fff;
+	text-shadow: 0 0 5px #000;
+}
