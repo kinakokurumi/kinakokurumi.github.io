@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*プライバシーポリシー*/
+
+.privacy{
+	line-height: 1.5em;
+	background-color: rgba(255,255,255,0.7);
+	padding: 60px;
+	width: 840px;
+	margin-bottom: 50px;
+}
+
+.privacy h2{
+	/*font-size: 1.8em;*/
+	padding: 0.7em 0 0.3em;
+}
+
+.privacy h3{
+	/*text-decoration: underline;*/
+	font-size: 1.2em;
+	padding: 1.5em 1em 0.5em;
+}
+
+.privacy h4{
+	padding: 0.5em 2em;
+	font-size: 1em;
+}
+
+.privacy p{
+	padding: 0 0 1em 3em;
+}
+
+.privacy ul{
+	padding: 0em 5em 0.5em;
+}
+
+.privacy p:last-child{
+	text-align: right;
+	padding: 30px 0;
+}

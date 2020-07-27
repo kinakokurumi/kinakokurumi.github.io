@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+h2{
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+
+#shop_info{
+	line-height: 1.5em;
+	background-color: rgba(255,255,255,0.6);
+	padding: 60px;
+	width: 840px;
+	margin-bottom: 50px;
+}
+
+.shop_text{
+	width: 300px;
+	float: left;
+}
+
+.shop_text h3{
+	font-size: 1.2em;
+	margin: 15px 0 5px;
+	/*text-decoration: underline;*/
+	/*width: 85px;
+	float: left;*/
+}
+
+.shop_text p{
+	margin: 15px 0 20px;
+	/*width: 170px;
+	float: left;*/
+}
+
+.shop_text i{
+	font-size: 12px;
+}
+
+iframe{
+	margin-bottom: 30px;
+	width: 530px;
+	float: right;
+}
