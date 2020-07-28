@@ -30,9 +30,6 @@ body{
     animation: fadeIn 2.5s ease 0s 1 normal;
 }
 
-#wrapper{
-	overflow-x: hidden;
-}
 @keyframes fadeIn {
     0% {
       opacity: 0
@@ -118,7 +115,7 @@ h1{
 	line-height: 65px;
 	font-size: 24px;
 	font-family: 'Merienda One', cursive;
-	padding-left: .5em;
+	padding-left: 1em;
 }
 
 h1 img{
@@ -200,10 +197,6 @@ h1 a{
 	display:block;
 }
 
-.toggle_wrap2{
-	display: none;
-}
-
 /*グローバルナビゲーションここまで*/
 
 /*ハンバーガーナビ*/
@@ -263,7 +256,7 @@ h1 a{
 	background-position: center center;
 	width: 100%;
 	height: 66.67vw;
-	margin-bottom: 150px;
+	margin-bottom: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -276,9 +269,9 @@ h1 a{
 
 .i_text01{
 	margin: 0 auto;
-	width: 100%;
-	max-width: 400px;
-	/*padding: 5px 80px 20px 20px;*/
+	background-image: url(../img/cup-03.svg);
+	background-repeat: no-repeat;
+	padding: 5px 80px 20px 20px;
 	/*margin: 2%;*/
 	/*background-color: rgba(255,255,255,0.8);
 	border-radius: 3em;
@@ -288,18 +281,10 @@ h1 a{
 	-ms-border-radius: 0 0 5em 5em;*/
 }
 
-.i_text01 p{
-	background-image: url("../img/cup_text-03.svg");
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 45vw;
-	max-height: 180px;
-}
-
 .i_text01 p, .i_text01 span{
 	font-size: 14px;
-	text-align: center;/*
-	line-height: 28px;*/
+	text-align: center;
+	line-height: 28px;
 }
 
 .i_text01 span{
@@ -352,7 +337,6 @@ h1 a{
 .i_sec{
 	position: relative;
 	margin-bottom: 50px;
-	overflow-x: hidden;
 }
 
 .i_sec01_01 .i_unit{
@@ -406,12 +390,13 @@ h1 a{
 
 .i_text02_01{
 	width: 67%;
+	margin-bottom: 150px;
+	margin-right: 0;
+	margin-left: auto;
 }
 
 .i_text02_02{
 	width: 80%;
-	margin-right: 0;
-	margin-left: auto;
 }
 
 .i_text02_03{
@@ -420,12 +405,11 @@ h1 a{
 }
 
 .chart{
-	width: 90%;
-	max-width: 400px;
+	width: 315px;
 	margin: 0 auto 150px;
-	/*padding: 10px 20px;
+	padding: 10px 20px;
 	border: solid 2px #999;
-	background-color: rgba(255,255,255,1);*/
+	background-color: rgba(255,255,255,1)
 }
 
 .chart p{
@@ -441,16 +425,6 @@ h1 a{
 	margin-bottom: 50px;
 	font-family: 'Merienda One', cursive, "游ゴシック体", "游ゴシック Medium", "游ゴシック", "メイリオ";
 }
-
-.menu h2:before, .menu h2:after{
-		content: "";
-		display: inline-block;
-		width: 22px;
-		height: 22px;
-		background-image: url(../img/leaf02-04.svg);
-		background-size: contain;
-		vertical-align: -5%;
-	}
 
 .menu h3{
 	padding: 0 20px;
@@ -476,7 +450,7 @@ h1 a{
 }
 
 .tea_price{
-	text-align: center;
+	text-align: center
 }
 
 .tea_menu{
@@ -513,7 +487,7 @@ h1 a{
 	border: solid 1px #999;
 	display: inline-block;
 	position: absolute;
-	top: 60%;
+	bottom: -20%; /*240/375*/
 	right: -6%;
 	height: 185px;
 }
@@ -538,9 +512,8 @@ h1 a{
 	border: solid 1px #999;
 	display: inline-block;
 	position: absolute;
-	top: 60%;
+	bottom: -20%;
 	right: -6%;
-	height: 185px;
 }
 
 .menu .more, .next{
@@ -662,14 +635,13 @@ h1 a{
 	object-fit: cover;
 	object-position: right top;
 	position: absolute;
-	top: 20%;
+	top: 25%;
 	right: 0%;
 }
 
 .g_text {
 	position: absolute;
-	top: 40%;
-	overflow-x: hidden;
+	top: 58%;
 }
 
 #map{
@@ -693,34 +665,16 @@ h1 a{
 }
 
 .access_inner{
-	/*	display: flex;
+	
+	/*
+	display: flex;
 	justify-content: center;
 	align-items: center;*/
 }
 
-.access .first_text:before{
-		content: "";
-		display: inline-block;
-		width: 22px;
-		height: 22px;
-		background-image: url(../img/leaf02-04.svg);
-		background-size: contain;
-		vertical-align: -5%;
-	}
-
 .attention{
 	background-color: rgba(255, 255, 255, 0.8);
 }
-
-.attention .first_text:before{
-		content: "";
-		display: inline-block;
-		width: 22px;
-		height: 22px;
-		background-image: url(../img/leaf02-04.svg);
-		background-size: contain;
-		vertical-align: -5%;
-	}
 
 footer{
 	padding: 30px 10px 0;
@@ -763,35 +717,30 @@ footer{
 	}
 	
 	.toggle_wrap {
-		display: none;
-		width: 100%;
 		background: none;
 		height: auto;
 		position: static;
-		padding: 10px 0 0;
-		/*margin-bottom: 20px;*/
+		padding: 10px 0;
+		margin-bottom: 20px;
 		/*background-color: rgba(21,21,21,.5);*/
 	}
 	
 	.toggle_switch{
+		/*display: none;*/
 	}
 
 	.toggle_contents {
 		/*overflow: hidden;*/
-		width: 100%;
+		width: 75%;
 		margin: 0 auto;
 		display: flex;
 	}
 	
 	.toggle_contents li{
 		width: 16.6vw;
-		padding: 0;
-		border: solid 1px #ccc;
 	}
 	
-	
 	.nav_item {
-		display: block;
 		/*float: left;*/
 		/*padding: 5px 15px;*/
 	}
@@ -802,49 +751,6 @@ footer{
 	}
 	.animation {
 		transition: none;
-	}
-	
-	.toggle_wrap2{
-		display: block;
-	}
-	
-	.toggle_contents2 {
-		/*overflow: hidden;*/
-		width: 100%;
-		margin: 0 auto;
-		display: flex;
-		list-style: none;
-	}
-	
-	.toggle_contents2 li{
-		list-style:none;
-		font-size: 14px;
-		text-align: center;
-		width: 16.6vw;
-		padding: 0;
-		border: solid 1px #ccc;
-		border-left: none;
-	}
-
-	.toggle_contents2 li a{
-		margin: 0;
-		padding-left: 0;
-		display:block;
-		line-height: 65px;
-	}
-	
-	.toggle_contents2 li .first_text{
-		border-left: solid 1px #ccc;
-	}
-	
-	
-	.nav_item2 {
-		display: block;
-		/*float: left;*/
-		/*padding: 5px 15px;*/
-	}
-	.nav_item2:hover {
-		color: #ccc;
 	}
 
 	.swiper-container{
@@ -859,13 +765,9 @@ footer{
 	background-size: contain;
 	padding: 5% 18%;
 	padding-left: 5%;
-	margin-right: 20%;*//*
+	margin-right: 20%;*/
 	margin-right: 10%;
-	padding: 20px 90px 40px 30px;*/
-	}
-	
-	.i_text01 p{
-		margin-left: 50px;
+	padding: 20px 90px 40px 30px;
 	}
 	
 	.introduce h4{
@@ -875,7 +777,6 @@ footer{
 		text-align: start;
 		margin-bottom: 0;
 		letter-spacing: 0.05em;
-		background-color: rgba(255,255,255,0.8);
 	}
 
 	.introduce h4 span{
@@ -945,8 +846,9 @@ footer{
 		top: 1em;*/
 		width: 100%;
 		/*max-width: 520px;*/
+		padding-top: 0;
+		padding-left: 0;
 		text-align: start;
-		padding: 1em;
 	}
 
 	.i_sec01_02{
@@ -998,15 +900,10 @@ footer{
 	.i_sec01_02 .i_unit p{
 		text-align: start;
 		width: 100%;
-		padding: 1em;
 	}
 	
 	.i_sec02 span{
 		display: inline;
-	}
-	
-	.i_text02_01, .i_text02_02, .i_text02_03{
-		padding: 30px;
 	}
 	
 	.i_text02 p{
@@ -1037,7 +934,7 @@ footer{
 	}
 	
 	.menu01 .price, .menu02 .price{
-		top: 70%;
+		bottom: -30%;
 	}
 	
 	.tea_menu .flex{
@@ -1097,12 +994,12 @@ footer{
 		position: relative;*/
 	}
 
-	.terrace_img01{
+	.terrace_img01 img{
 		/*width: 65%;
 		height: 40vw;
 		object-fit: cover;
 		object-position: 40% 10%;*/
-		margin-bottom: 120px;
+		margin-bottom: 420px;
 	}
 
 	.terrace_img02 img{
@@ -1137,7 +1034,7 @@ footer{
 	}
 	
 	.access_inner {
-		width: 35vw;
+		width: 30vw;
 		margin: 0 auto;
 		
 	}
@@ -1158,67 +1055,11 @@ footer{
 		margin: 0 auto;
 	}*/
 	
-	header{
-		display: flex;
-		justify-content: space-between;
-	}
-	
-	header h1{
-		width: 250px;
-		padding-left: 20px;
-	}
-	
-	.toggle_wrap2{
-		width: 700px; /*{1024-(210+12)}/1024=78*/
-	}
-	
-	.toggle_contents2 {
-		/*overflow: hidden;*/
-		margin: 0;
-		display: flex;
-		list-style: none;
-	}
-	
-	.toggle_contents2 li{
-		list-style:none;
-		font-size: 14px;
-		line-height: 3em;
-		text-align: center;
-		width: 110px;
-		padding: 0;
-		border: none;
-		border-left: none;
-	}
-
-	.toggle_contents2 li a{
-		margin: 0;
-		padding-left: 0;
-		display:block;
-	}
-	
-	.toggle_contents2 li .first_text{
-		border-left: solid 1px #ccc;
-	}
-	
-	
-	.nav_item2 {
-		display: block;
-		/*float: left;*/
-		/*padding: 5px 15px;*/
-	}
-	.nav_item2:hover {
-		color: #ccc;
-	}
-	
-	.i_text01{/*
-	padding: 30px 120px 40px 30px;*/
-		max-width: 466px;
-		max-height: 175px;
-		
+	.i_text01{
+	padding: 30px 120px 40px 30px;
 	}
 	
 	.i_text01 p{
-		background-image: url("../img/cup-05.svg");
 	font-size: 18px;
 	}
 	
@@ -1230,33 +1071,8 @@ footer{
 		margin-left: 15%;
 	}
 	
-	.i_sec02{
-		padding: 50px 0;
-	}
-	
-	.i_text02_01, .i_text02_02, .i_text02_03{
-		padding: 50px;
-	}
-	
-	.i_text02_01{
-		width: 360px;
-		margin-left: 50px;
-	}
-	
-	.i_text02_02{
-		width: 440px;
-		margin-right: 50px;
-	}
-	
-	.i_text02_03{
-		width: 550px;
-		margin: 75px auto;
-	}
-	
 	.menu01 .price, .menu02 .price{
-		top: 80%;
-		padding: 30px;
-		height: 200px;
+		bottom: -20%;
 	}
 	
 	.t_text{
